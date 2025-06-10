@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #3b1270;
+  --color-primary-link: #5a13b4;
+  --color-primary-input: #5913b48a;
+  --color-secondary: #ffffff;
+  --color-tertiary: ##cc7f0b;
+  --bg-primary: #ffffff;
+  --bg-secondary: #3b1270;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: var(--color-primary-link);
+  text-decoration: none;
+}
+
+h1,
+h2,
+p {
+  color: var(--color-primary);
+  font-weight: 400;
+}
+
+.marginSite {
+  margin: 2% 15%;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+.gap20 {
+  gap: 20%;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+/* Início do cabeçalho */
+
+nav {
+  justify-content: space-between;
+}
+
+.containerGradBlog {
+  gap: 15%;
+}
+
+.inputBuscar {
+  border: none;
+}
+
+.botaoBuscar {
+  border: none;
+  background-color: var(--bg-primary);
+}
+
+.formularioBuscar {
+  border: 1px solid var(--color-primary-input);
+  padding: 2% 5%;
+}
+
+.formularioBuscar::placeholder {
+  color: var(--color-primary-input);
+}
+
+.formularioBuscar:focus {
+  outline: none;
+}
+
+.botaoAmbVirtual {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+}
+/* Fim do cabeçalho */
+
+/* Inicio apresentação*/
+.containerApresentacao {
+  margin-top: 10%;
+}
+
+.containerSubtitulo {
+  gap: 5%;
+  align-items: flex-end;
+  padding-top: 2%;
+}
+
+.containerSubtitulo h2 {
+  font-size: 7rem;
+}
+
+.containerSubtitulo img {
+  min-height: 260px;
+  width: auto;
+}
+
+.containerSubtitulo p {
+  max-width: 240px;
+}
+
+@media screen and (max-width: 1024px) {
+  .containerSubtitulo {
+    flex-wrap: wrap;
+  }
+  .containerSubtitulo h2 {
+    font-size: 4rem;
+  }
+  .containerSubtitulo image {
+    display: none;
+  }
+  .containerSubtitulo p {
+    max-width: 465px;
+    margin-top: 5%;
+  }
+}
+
+/* Fim apresentação*/
